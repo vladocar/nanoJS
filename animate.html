@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>Animate</title>
+<script src="src/nanoJS.js" type="text/javascript"></script>
+<script type="text/javascript">
+function loadme(){
+
+
+	$("#a").on("click", function(){
+
+		$("#a").css("background-color:green;color:#fff;");
+		$("#b").animate('2', '1','360','1','1','0','0', '0','0','1').css("background-color:green;").html("<p>Hello World!<p>");
+		$("#c").animate('3', '1','0','360','1','0','0', '0','0','1');
+		$("#d").animate('3', '1','0','1','360','0','0', '0','0','1');
+		$("#e").animate('6', '1','0','0','0','480','0', '0','0','1').css("background-color:red;");
+		$("#f").animate('2', '1','0','0','0','0','220', '0','0','1');
+		$("#g").animate('2', '1','0','0','0','0','220', '220','0','1').text("Some text");
+	})
+
+	$("#b").on("mouseover", function(){
+
+		$("#b").animate('0.3', '1.2','0','1','1','0','0', '0','0','1').css("background-color:green;").insertFirst(" Hello");
+
+	})
+	$("#b").on("mouseout", function(){
+
+		$("#b").animate('0.3', '1','0','1','1','0','0', '0','0','1').css("background-color:blue;color:#fff;");
+
+	})
+
+}
+
+window.addEventListener('load',loadme,false);
+</script>
+<style>
+#a{
+width: 100px;
+background-color: #fff;
+	color:green;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+	text-shadow: 0 -1px 1px #222;
+	border-bottom: 1px solid #222;
+	padding: 4px;
+	margin:10px;
+	text-align:center;
+}
+
+#b,#c,#d,#f,#e,#g{
+float: left;
+	width: 200px;
+	height:200px;
+	margin:20px;
+}
+#b{
+
+background-color: #333;
+
+}
+#c{
+
+	background-color: #666;
+}
+#d{
+
+	background-color: #999;
+}
+#e{
+
+	background-color: #222;
+}
+#f{
+
+	background-color: #444;
+}
+#g{
+
+	background-color: #666;
+}
+.clear{
+	clear:both;
+}
+</style>
+</head>
+
+<body>
+<div id="a"> Click Me</div>
+
+<div id="b" style="color:red"> Color</div>
+<div id="c"></div>
+<div id="d"></div>
+<div class="clear"></div>
+<div id="e"></div>
+<div id="f"></div>
+<div id="g"></div>
+
+</body>
+</html>

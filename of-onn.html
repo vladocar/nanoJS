@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>Off - On </title>
+<script src="src/nanoJS.js" type="text/javascript"></script>
+<script type="text/javascript">
+function loadme(){
+
+	$(".a").on("click", function(){
+
+		$("#main").att("class","off");
+
+	})
+
+	$(".b").on("click", function(){
+
+		$("#main").att("class","on");
+
+	})
+
+
+}
+
+window.addEventListener('load',loadme,false);
+</script>
+<style>
+html,body{
+	margin:0;padding: 0;
+}
+body{
+	height:100%;
+}
+.off{
+height:100%; width:100%; position:absolute; left:0; top:0;
+
+	background-image: linear-gradient(#000,#222,#444, #666,#888, #fff);
+	}
+
+.on{
+height:100%; width:100%; position:absolute; left:0; top:0;
+
+	background-image: linear-gradient(
+	 rgb(255,255,255),
+	 rgb(255,255,205),
+	 rgb(255,255,155),
+	 rgb(255,255,105),
+	 rgb(255,255,55),
+	 rgb(255,255,5)
+	);
+	}
+
+.a,.b{
+	width: 100px;
+	background-color: #fff;
+	color:green;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+	text-shadow: 0 -1px 1px #222;
+	border-bottom: 1px solid #222;
+	padding: 4px;
+	margin:10px;
+	text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+<div id="main" class="on">
+<div id="a" class="a">On</div>
+<div id="b" class="b">Off</div>
+
+</div>
+
+</body>
+</html>

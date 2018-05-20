@@ -1,0 +1,52 @@
+html,body{
+	margin:0;padding:0;
+}
+body{background-color: #F4F4F4;}
+a{
+	text-decoration: none; color:#333; line-height:1.6;
+}
+a:hover{
+	text-decoration: underline;
+}
+i{
+	font-size: 12px;
+}
+ul{
+	list-style-type: none;
+}
+pre{
+font:14px/ 1.6 Monaco, Consolas, 'Lucida Console', monospace;
+}
+h1,h2,h3{
+font-family: "lucida grande","lucida sans unicode", sans-serif;
+font-weight: normal;
+}
+p{font: 14px/1.6 Arial, sans-serif}
+
+/* sidebar is directly  taken from backbone.js*/
+#sidebar {
+      background: #fff;
+      position: fixed;
+      top: 0; left: 0; bottom: 0;
+      width: 180px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 15px 0 15px 15px;
+      border-right: 1px solid #ddd;
+      box-shadow: 0 0 20px #ccc; -webkit-box-shadow: 0 0 20px #ccc; -moz-box-shadow: 0 0 20px #ccc;
+    }
+ #links{
+ list-style-position: inside; padding:15px 0 0 0; margin:0;
+ }
+ #intro{
+	 max-width: 720px;
+	 margin:20px 0 10px 220px;
+ }
+ #a{
+ 	margin-left:190px;
+ }
+ .l{
+ 	border-bottom: 1px dotted #ccc;
+ 	padding:15px 0;
+ }
+ .b{font-weight: bold;}
