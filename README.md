@@ -19,7 +19,7 @@ $("#a").on("click", function(){
 
 ```
 
-It works in IE9 and later.
+It works in IE9 and later. (some methods addClass, removeClass and toggleClass will not work in IE9)
 
 Read more here:
 
