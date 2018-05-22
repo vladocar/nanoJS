@@ -46,12 +46,24 @@ var nano = function(s){
   },
   toggleClass: function (v) {
     return this.each(function (i) {
-      i.classList.toggle(v);
+      if (i.classList) {
+        i.classList.toggle(v);
+      } else {
+        if (!i.className || i.className.indexOf(v) === -1) {
+          i.className += ' ' + v;
+        } else {
+          i.className.replace(v, '');
+        }
+      }
     });
   },
   removeClass: function (v) {
     return this.each(function (i) {
-      i.classList.remove(v);
+      if (i.classList) {
+        i.classList.remove(v);
+      } else {
+        i.className.replace(v, '');
+      }
     });
   },
   html: function (v) {
