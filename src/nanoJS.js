@@ -14,17 +14,17 @@ var nano = function(s){
       i.style.cssText = i.style.cssText + v;
     });
   },
-  att: function (a, v) {
+  attr: function (a, v) {
     return this.each(function (i) {
       i.setAttribute(a, v);
     });
   },
-  getAtt: function (v) {
+  getAttr: function (v) {
     return this.each(function (i) {
       i.getAttribute(v);
     });
   },
-  removeAtt: function (v) {
+  removeAttr: function (v) {
     return this.each(function (i) {
       i.removeAttribute(v);
     });
