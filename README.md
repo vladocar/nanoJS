@@ -1,4 +1,10 @@
 # nanoJS
+
+[![License MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+[![Gzip Size](https://img.badgesize.io/https://unpkg.com/@vladocar/nanojs@1.0.0/src/nanoJS.min.js?compression=gzip)](https://unpkg.com/@vladocar/nanojs@1.0.0/src/nanoJS.min.js)
+[![npm](https://img.shields.io/npm/v/@vladocar/nanojs.svg)](https://www.npmjs.com/package/@vladocar/nanojs)
+
+
 Minimal standalone JS library for DOM manipulation
 
 nanoJS is around 100 lines of code (1.2 Kb compressed) JavaScript library for basic DOM manipulation. It has jQuery like syntax and supports chaining.
