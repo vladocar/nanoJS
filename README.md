@@ -37,5 +37,10 @@ or on my blog:
 
 
 You can use direct download or  
-
+<pre>
 npm i @vladocar/nanojs
+</pre>
+
+```html
+<script src="https://unpkg.com/@vladocar/nanojs@1.0.0/src/nanoJS.min.js"></script>
+```
