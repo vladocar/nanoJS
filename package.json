@@ -1,0 +1,28 @@
+{
+  "name": "@vladocar/nanojs",
+  "version": "1.0.0",
+  "description": "Minimal standalone JS library for DOM manipulation",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladocar/nanoJS.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "dom",
+    "library"
+  ],
+  "author": "Vladimir Carrer <vladocar@gmail.com> (http://www.vcarrer.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladocar/nanoJS/issues"
+  },
+  "homepage": "https://github.com/vladocar/nanoJS#readme"
+}
