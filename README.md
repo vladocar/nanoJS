@@ -28,3 +28,6 @@ Read more here:
 or on my blog:
 
 [http://www.vcarrer.com/2018/05/nanojs-javascript-for-dom-manipulation.html](http://www.vcarrer.com/2018/05/nanojs-javascript-for-dom-manipulation.html)
+
+
+You can use direct download or  npm i @vladocar/nanojs
