@@ -14,15 +14,20 @@ var nano = function(s){
       i.style.cssText = i.style.cssText + v;
     });
   },
+  cssdom: function (v) {
+    return this.each(function (i) {
+      for (var key in v) {
+        i.style[key] = v[key];
+      }
+    });
+  },
   attr: function (a, v) {
     return this.each(function (i) {
       i.setAttribute(a, v);
     });
   },
   getAttr: function (v) {
-    return this.each(function (i) {
-      i.getAttribute(v);
-    });
+    return this.value[0].getAttribute(v);
   },
   removeAttr: function (v) {
     return this.each(function (i) {

@@ -1,6 +1,6 @@
 {
   "name": "@vladocar/nanojs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal standalone JS library for DOM manipulation",
   "main": "index.js",
   "directories": {
