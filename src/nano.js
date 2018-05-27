@@ -1,9 +1,9 @@
 function Nano(selector){
     var self = this;
-    let value = Array.prototype.slice.call(document.querySelectorAll(selector));
+    let values = Array.prototype.slice.call(document.querySelectorAll(selector));
 
     self.each = function(handler) {
-        [].forEach.call(value, handler);
+        [].forEach.call(values, handler);
         return this;
     };
 
