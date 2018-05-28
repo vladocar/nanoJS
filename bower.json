@@ -1,0 +1,16 @@
+{
+  "name": "nanojs",
+  "description": "Minimal standalone JS library for DOM manipulation",
+  "main": "index.js",
+  "authors": [
+    "Vladimir Carrer <vladocar@gmail.com> (http://www.vcarrer.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "js",
+    "javascript",
+    "dom",
+    "library"
+  ],
+  "homepage": "https://github.com/vladocar/nanoJS"
+}

@@ -25,7 +25,7 @@ $("#a").on("click", function(){
 
 ```
 
-[You can find it here some basic examples.](docs.md) 
+[You can find it here some basic examples.](docs.md)
 
 
 It works in IE9 and later. (some methods addClass, removeClass and toggleClass will not work in IE9)
@@ -39,10 +39,15 @@ or on my blog:
 [http://www.vcarrer.com/2018/05/nanojs-javascript-for-dom-manipulation.html](http://www.vcarrer.com/2018/05/nanojs-javascript-for-dom-manipulation.html)
 
 
-You can use direct download or  
-<pre>
+You can use direct download or:
+  
+```sh
 npm i @vladocar/nanojs
-</pre>
+```
+
+```sh
+bower install nanoJS
+```
 
 ```html
 <script src="https://unpkg.com/@vladocar/nanojs@1.0.1/src/nanoJS.min.js"></script>
