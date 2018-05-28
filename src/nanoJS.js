@@ -5,6 +5,10 @@ var nano = function(s){
 };
 
  nano.prototype = {
+  eq: function(n){
+    this.value = [this.value[n]];
+    return this;
+  },
   each: function(fn) {
     [].forEach.call(this.value, fn);
     return this;
