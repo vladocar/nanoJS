@@ -31,6 +31,11 @@ $("div").cssdom({backgroundColor:"red", color:"#fff"});
 $('#c').empty();
 ```
 
+#### eq
+```js
+$("div").eq(0).html("Hello World!");
+```
+
 #### getAtt
 ```js
 $("#b").getAtt("class");
