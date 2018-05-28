@@ -1,6 +1,6 @@
 function Nano(selector){
     var self = this;
-    let values = Array.prototype.slice.call(document.querySelectorAll(selector));
+    var values = Array.prototype.slice.call(document.querySelectorAll(selector));
 
     self.each = function(handler) {
         [].forEach.call(values, handler);
@@ -19,15 +19,15 @@ function Nano(selector){
         });
     };
 
-    self.getAttr = function (v) {
+    self.getAttr = function (attribute) {
         return this.each(function (element) {
-            element.getAttribute(v);
+            element.getAttribute(attribute);
         });
     };
 
-    self.removeAttr = function (v) {
+    self.removeAttr = function (attribute) {
         return self.each(function (element) {
-            element.removeAttribute(v);
+            element.removeAttribute(attribute);
         });
     };
 
@@ -43,62 +43,62 @@ function Nano(selector){
         });
     };
 
-    self.addClass = function (v) {
+    self.addClass = function (className) {
         return self.each(function (element) {
             if (element.classList) {
-                element.classList.add(v)
+                element.classList.add(className)
             }
             else {
-                element.className += ' ' + v;
+                element.className += ' ' + className;
             }
         });
     };
         
-    self.toggleClass = function (v) {
+    self.toggleClass = function (className) {
         return self.each(function (element) {
-            element.classList.toggle(v);
+            element.classList.toggle(className);
         });
     };
         
-    self.removeClass = function (v) {
+    self.removeClass = function (className) {
         return self.each(function (element) {
-            element.classList.remove(v);
+            element.classList.remove(className);
         });
     };
 
-    self.html = function (v) {
+    self.html = function (html) {
         return self.each(function (element) {
-            element.innerHTML = v;
+            element.innerHTML = html;
         });
     };
         
-    self.text = function (v) {
+    self.text = function (text) {
         return this.each(function (element) {
-            element.innerText = v;
+            element.innerText = text;
         });
     };
 
-    self.insertBefore = function (v) {
+    self.insertBefore = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("beforeBegin", v);
+            element.insertAdjacentHTML("beforeBegin", html);
         });
     };
 
-    self.insertAfter = function (v) {
+    self.insertAfter = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("afterEnd", v);
+            element.insertAdjacentHTML("afterEnd", html);
         });
     };
 
-    self.insertFirst = function (v) {
+    self.insertFirst = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("afterBegin", v);
+            element.insertAdjacentHTML("afterBegin", html);
         });
     };
 
-    self.insertLast = function (v) {
+    self.insertLast = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("beforeEnd", v);
+            element.insertAdjacentHTML("beforeEnd", html);
         });
     };
         
