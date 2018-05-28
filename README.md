@@ -25,7 +25,7 @@ $("#a").on("click", function(){
 
 ```
 
-[You can find it here some basic examples.](docs.md)
+[You can find it here some basic examples.](docs.md) also the [Mission & Philosophy of nanoJS](mission.md)
 
 
 It works in IE9 and later. (some methods addClass, removeClass and toggleClass will not work in IE9)
@@ -40,7 +40,7 @@ or on my blog:
 
 
 You can use direct download or:
-  
+
 ```sh
 npm i @vladocar/nanojs
 ```
