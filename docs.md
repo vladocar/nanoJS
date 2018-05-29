@@ -8,12 +8,12 @@ $("#a").addClass("newclass");
 
 #### animate
 ```js
-$('#c').animate('2.3', '1.2','0','1','1','0','0', '0','0','1');
+$('#c').animate('2.3', '1.2','0','1','1', '0', '0', '0', '0', '1');
 ```
 
 #### attr
 ```js
-$('#c').attr("class","newclass");
+$('#c').attr("class", "newclass");
 ```
 
 #### css
@@ -60,7 +60,7 @@ $("#c").css("width:" + offset.width + "px");
 ```js
 $("#a").on("click", function(){
 
-  $("#someDiv").css("background-color:green;color:#fff;");
+  $("#someDiv").css("background-color:green; color:#fff;");
 
 })
 ```
