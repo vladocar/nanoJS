@@ -49,25 +49,29 @@ npm i @vladocar/nanojs
 bower install nanoJS
 ```
 
+```sh
+yarn add @vladocar/nanojs
+```
+
 ```html
 <script src="https://unpkg.com/@vladocar/nanojs@1.0.1/src/nanoJS.min.js"></script>
 ```
 
 ### Utils: 
 
-addClass
-animate
-attr
-css
-cssdom
-empty
-eq
-getAtt
-html
-insertAfter, insertBefore, insertFirst insertLast
-offset 
-on 
-removeAttr
-removeClass
-text
-toggleClass
+addClass  
+animate  
+attr  
+css  
+cssdom  
+empty  
+eq  
+getAtt  
+html  
+insertAfter, insertBefore, insertFirst insertLast  
+offset  
+on  
+removeAttr  
+removeClass  
+text  
+toggleClass  
