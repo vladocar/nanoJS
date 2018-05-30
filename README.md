@@ -66,7 +66,7 @@ css
 cssdom  
 empty  
 eq  
-getAtt  
+getAttr 
 html  
 insertAfter, insertBefore, insertFirst insertLast  
 offset  
