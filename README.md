@@ -1,7 +1,7 @@
 # nanoJS
 
 [![License MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
-[![Gzip Size](https://img.badgesize.io/https://unpkg.com/@vladocar/nanojs@1.0.1/src/nanoJS.min.js?compression=gzip)](https://unpkg.com/@vladocar/nanojs@1.0.0/src/nanoJS.min.js)
+[![Gzip Size](https://img.badgesize.io/https://unpkg.com/@vladocar/nanojs@1.0.2/src/nanoJS.min.js?compression=gzip)](https://unpkg.com/@vladocar/nanojs@1.0.0/src/nanoJS.min.js)
 [![npm](https://img.shields.io/npm/v/@vladocar/nanojs.svg)](https://www.npmjs.com/package/@vladocar/nanojs)
 
 
@@ -54,10 +54,10 @@ yarn add @vladocar/nanojs
 ```
 
 ```html
-<script src="https://unpkg.com/@vladocar/nanojs@1.0.1/src/nanoJS.min.js"></script>
+<script src="https://unpkg.com/@vladocar/nanojs@1.0.2/src/nanoJS.min.js"></script>
 ```
 
-### Utils: 
+### Utils:
 
 addClass  
 animate  

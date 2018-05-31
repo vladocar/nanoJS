@@ -1,7 +1,10 @@
-
-var nano = function(s){
-  this.value = Array.prototype.slice.call(document.querySelectorAll(s));
-  return this;
+var nano = function(s) {
+    if (typeof s === "string") {
+        this.value = Array.prototype.slice.call(document.querySelectorAll(s));
+    }
+    if (typeof s === "object") {
+        this.value = [s];
+    }
 };
 
  nano.prototype = {
