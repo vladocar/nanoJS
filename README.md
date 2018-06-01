@@ -5,6 +5,8 @@
 [![npm](https://img.shields.io/npm/v/@vladocar/nanojs.svg)](https://www.npmjs.com/package/@vladocar/nanojs)
 
 
+<img src="../logos/png/horizontal%20-%20logo/nano-logo.png"/>
+
 Minimal standalone JS library for DOM manipulation
 
 <img src="logos/png/horizontal%20-%20logo/nano-logo.png"/>
