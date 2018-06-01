@@ -81,6 +81,11 @@ var nano = function(s) {
       i.innerText = v;
     });
   },
+  remove: function(){
+    return this.each(function (i) {
+      i.remove();
+    });
+  },
   insertBefore: function (v) {
     return this.each(function (i) {
       i.insertAdjacentHTML("beforeBegin",v);
