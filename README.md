@@ -5,6 +5,8 @@
 [![npm](https://img.shields.io/npm/v/@vladocar/nanojs.svg)](https://www.npmjs.com/package/@vladocar/nanojs)
 
 
+<img src="https://github.com/vladocar/nanoJS/blob/master/logos/png/horizontal%20-%20logo/Horizontalhdpi.png"/>
+
 Minimal standalone JS library for DOM manipulation
 
 nanoJS is around 100 lines of code (0.6 Kb compressed) JavaScript library for basic DOM manipulation. It has jQuery like syntax and supports chaining.
