@@ -1,7 +1,10 @@
-
-var nano = function(s){
-  this.value = Array.prototype.slice.call(document.querySelectorAll(s));
-  return this;
+var nano = function(s) {
+    if (typeof s === "string") {
+        this.value = Array.prototype.slice.call(document.querySelectorAll(s));
+    }
+    if (typeof s === "object") {
+        this.value = [s];
+    }
 };
 
  nano.prototype = {
@@ -40,7 +43,7 @@ var nano = function(s){
   },
   animate: function (time, scale, rotate, rotateX, rotateY, translateX, translateY, skewX, skewY, opacity) {
     return this.each(function (i) {
-      i.style.cssText = i.style.cssText + 'transition: all ' + time + 's ease-in-out; transform: scale(' + scale + ') rotate(' + rotate + 'deg) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translate(' + translateX + 'px, ' + translateY + 'px) skew(' + skewX + 'deg, ' + skewY + 'deg); opacity:'+opacity+';)'
+      i.style.cssText = i.style.cssText + 'transition: all ' + time + 's ease-in-out; transform: scale(' + scale + ') rotate(' + rotate + 'deg) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translate(' + translateX + 'px, ' + translateY + 'px) skew(' + skewX + 'deg, ' + skewY + 'deg); opacity:'+opacity+';'
     });
   },
   on: function (type, fn) {

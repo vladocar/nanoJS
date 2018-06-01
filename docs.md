@@ -84,3 +84,12 @@ $('#b').text("Hello World!");
 ```js
 $('#c').toggleClass("someClass");
 ```
+
+#### $(this)
+```js
+$("div").on("click", function(){
+
+  $(this).css("background-color:red");
+
+})
+```
