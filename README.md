@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/@vladocar/nanojs.svg)](https://www.npmjs.com/package/@vladocar/nanojs)
 
 
-<img src="https://github.com/vladocar/nanoJS/blob/master/logos/png/horizontal%20-%20logo/Horizontalhdpi.png"/>
+<img src="logos/png/horizontal%20-%20logo/nano-logo.png"/>
 
 Minimal standalone JS library for DOM manipulation
 
