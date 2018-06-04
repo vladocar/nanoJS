@@ -32,4 +32,10 @@ describe('Nano JS', function(){
         
         expect('').toBe(value);
     });
+
+    it('Returns string empty if there is no element', function(){
+        var value = $('#' + 'invalid-element-id').getAttr('invalid-attribute');
+        
+        expect('').toBe(value);
+    });
 });

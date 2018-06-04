@@ -21,9 +21,13 @@ function Nano(selector){
 
     self.getAttr = function (attribute) {
         var firstElement = values[0];
-        if( !values || !firstElement){return ;}
+        if( !values || !firstElement){
+            return '';
+        }
         var result = firstElement.getAttribute(attribute);
-        if(!result){return ''};
+        if(!result){
+            return '';
+        }
         return result;
     };
 
