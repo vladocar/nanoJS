@@ -21,11 +21,10 @@ function Nano(selector){
 
     self.getAttr = function (attribute) {
         var firstElement = values[0];
-        if( !values || !firstElement){return '';}
-        return firstElement.getAttribute(attribute);
-        // return this.each(function (element) {
-        //     return element.getAttribute(attribute);
-        // });
+        if( !values || !firstElement){return ;}
+        var result = firstElement.getAttribute(attribute);
+        if(!result){return ''};
+        return result;
     };
 
     self.removeAttr = function (attribute) {
