@@ -1,5 +1,6 @@
 describe('Nano JS', function(){
     const elementId = 'a';
+    
     beforeEach(function(){
         document.getElementById(elementId).removeAttribute("style")
     });
