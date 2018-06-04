@@ -18,7 +18,7 @@ describe('Nano JS', function(){
         expect(document.getElementById(elementId).outerHTML).toContain('class="on"');
     });
 
-    it('Gets the value of an attribute', function(){
+    it('Returns the value of an attribute', function(){
         var attributeValue = 'on';
         $('#' + elementId).attr('class', attributeValue);
 
