@@ -20,9 +20,12 @@ function Nano(selector){
     };
 
     self.getAttr = function (attribute) {
-        return this.each(function (element) {
-            element.getAttribute(attribute);
-        });
+        var firstElement = values[0];
+        if( !values || !firstElement){return '';}
+        return firstElement.getAttribute(attribute);
+        // return this.each(function (element) {
+        //     return element.getAttribute(attribute);
+        // });
     };
 
     self.removeAttr = function (attribute) {
