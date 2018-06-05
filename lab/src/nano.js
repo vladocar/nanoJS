@@ -1,9 +1,9 @@
 function Nano(selector){
-    var self = this;
-    var values = Array.prototype.slice.call(document.querySelectorAll(selector));
+    let self = this;
+    let values = Array.prototype.slice.call(document.querySelectorAll(selector));
 
     self.each = function(handler) {
-        [].forEach.call(values, handler);
+        values.forEach(handler);
         return this;
     };
 
@@ -20,9 +20,15 @@ function Nano(selector){
     };
 
     self.getAttr = function (attribute) {
-        return this.each(function (element) {
-            element.getAttribute(attribute);
-        });
+        let firstElement = values[0];
+        if( !values || !firstElement){
+            return '';
+        }
+        let result = firstElement.getAttribute(attribute);
+        if(!result){
+            return '';
+        }
+        return result;
     };
 
     self.removeAttr = function (attribute) {
@@ -78,33 +84,33 @@ function Nano(selector){
         });
     };
 
+    self.empty = function () {
+        return self.each(function (element) {
+            element.innerHTML = '';
+        });
+    };
+
     self.insertBefore = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("beforeBegin", html);
+            element.insertAdjacentHTML('beforeBegin', html);
         });
     };
 
     self.insertAfter = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("afterEnd", html);
+            element.insertAdjacentHTML('afterEnd', html);
         });
     };
 
     self.insertFirst = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("afterBegin", html);
+            element.insertAdjacentHTML('afterBegin', html);
         });
     };
 
     self.insertLast = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("beforeEnd", html);
-        });
-    };
-        
-    self.empty = function () {
-        return self.each(function (element) {
-            element.innerHTML = "";
+            element.insertAdjacentHTML('beforeEnd', html);
         });
     };
         
