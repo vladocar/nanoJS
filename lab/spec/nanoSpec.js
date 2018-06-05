@@ -91,11 +91,11 @@ describe('Nano JS', function(){
         expect(className).toContain(document.getElementById(elementId).className);
     });
 
-    it('Does not add a class name if the element does not exist', function(){
+    it('Toggles a class name', function(){
         const className = 'class-name';
 
-        $('#' + 'invalid-element-id').addClass(className);
+        $('#' + elementId).toggleClass(className);
 
-        expect(className).not.toContain(document.getElementById(elementId).className);
+        expect(className).toContain(document.getElementById(elementId).className);
     });
 });
