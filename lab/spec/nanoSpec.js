@@ -62,4 +62,13 @@ describe('Nano JS', function(){
 
         expect(document.getElementById(elementId).style.cssText).toBe(style);
     });
+
+    it("Sets an event", function(){
+        let eventThrown = false;
+        $("#" + elementId).on('click', function(){ eventThrown = true; });
+
+        document.getElementById(elementId).click();
+
+        expect(eventThrown).toBeTruthy();
+    });
 });
