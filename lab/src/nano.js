@@ -84,6 +84,12 @@ function Nano(selector){
         });
     };
 
+    self.empty = function () {
+        return self.each(function (element) {
+            element.innerHTML = '';
+        });
+    };
+
     self.insertBefore = function (html) {
         return self.each(function (element) {
             element.insertAdjacentHTML('beforeBegin', html);
@@ -105,12 +111,6 @@ function Nano(selector){
     self.insertLast = function (html) {
         return self.each(function (element) {
             element.insertAdjacentHTML('beforeEnd', html);
-        });
-    };
-        
-    self.empty = function () {
-        return self.each(function (element) {
-            element.innerHTML = '';
         });
     };
         
