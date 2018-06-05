@@ -125,4 +125,12 @@ describe('Nano JS', function(){
         expect(document.getElementById(elementId).outerText).toContain(text);
     });
 
+    it('Sets empty', function(){
+        var html = '<p></p>';
+        $('#' + elementId).html(html);
+        
+        $('#' + elementId).empty();
+
+        expect('').toBe(document.getElementById(elementId).innerHTML);
+    });
 });
