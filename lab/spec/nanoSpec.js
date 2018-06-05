@@ -20,7 +20,7 @@ describe('Nano JS', function(){
         expect(document.getElementById(elementId).outerHTML).toContain('class="on"');
     });
 
-    describe("when getting attribute is requested", function(){
+    describe('when getting attribute is requested', function(){
         it('Returns string empty if there is no attribute', function(){
             var value = $('#' + elementId).getAttr('invalid-attribute');
             
@@ -44,7 +44,7 @@ describe('Nano JS', function(){
     
     });
 
-    it("Removes an attribute", function(){
+    it('Removes an attribute', function(){
         const attributeValue = 'on';
         const attribute = 'class';
         $('#' + elementId).attr(attribute, attributeValue);
@@ -55,25 +55,25 @@ describe('Nano JS', function(){
         expect('').toBe($('#' + elementId).getAttr(attribute));
     });
 
-    it("Animates", function(){
+    it('Animates', function(){
         const style = 'transition: all 2s ease-in-out; transform: scale(1) rotate(360deg) rotateX(1deg) rotateY(1deg) translate(0px, 0px) skew(0deg, 0deg); opacity: 1;';
 
-        $("#" + elementId).animate('2', '1','360','1','1','0','0', '0','0','1');
+        $('#' + elementId).animate('2', '1','360','1','1','0','0', '0','0','1');
 
         expect(document.getElementById(elementId).style.cssText).toBe(style);
     });
 
     describe('When setting an event is requested', function(){
-        it("Does nothing if the element does not exist", function(){
+        it('Does nothing if the element does not exist', function(){
             let eventThrown = false;
-            $("#" + 'invalid-elemet-id').on('click', function(){ eventThrown = true; });
+            $('#' + 'invalid-elemet-id').on('click', function(){ eventThrown = true; });
     
             document.getElementById(elementId).click();
     
             expect(eventThrown).toBeFalsy();
         });
 
-        it("Sets an event", function(){
+        it('Sets an event', function(){
             let eventThrown = false;
             $("#" + elementId).on('click', function(){ eventThrown = true; });
     
