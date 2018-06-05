@@ -2,7 +2,8 @@ describe('Nano JS', function(){
     const elementId = 'a';
 
     beforeEach(function(){
-        document.getElementById(elementId).removeAttribute("style")
+        document.getElementById(elementId).removeAttribute("style");
+        document.getElementById(elementId).removeAttribute("class");
     });
 
     it('Applyies css style', function(){
@@ -52,5 +53,13 @@ describe('Nano JS', function(){
         $('#' + elementId).removeAttr(attribute);
        
         expect('').toBe($('#' + elementId).getAttr(attribute));
+    });
+
+    it("Animates", function(){
+        const style = 'transition: all 2s ease-in-out; transform: scale(1) rotate(360deg) rotateX(1deg) rotateY(1deg) translate(0px, 0px) skew(0deg, 0deg); opacity: 1;';
+
+        $("#" + elementId).animate('2', '1','360','1','1','0','0', '0','0','1');
+
+        expect(document.getElementById(elementId).style.cssText).toBe(style);
     });
 });
