@@ -117,4 +117,12 @@ describe('Nano JS', function(){
         expect(document.getElementById(elementId).outerHTML).toContain(html);
     });
 
+    it('sets text', function(){
+        var text = 'some text';
+
+        $('#' + elementId).text(text);
+
+        expect(document.getElementById(elementId).outerText).toContain(text);
+    });
+
 });
