@@ -88,7 +88,17 @@ describe('Nano JS', function(){
 
         $('#' + elementId).addClass(className);
 
+        expect(className).toBe(document.getElementById(elementId).className);
+    });
+
+    it('Removes a class', function(){
+        const className = 'class-name';
+        $('#' + elementId).addClass(className);
         expect(className).toContain(document.getElementById(elementId).className);
+
+        $('#' + elementId).removeClass(className);
+
+        expect('').toBe(document.getElementById(elementId).className);
     });
 
     it('Toggles a class name', function(){
@@ -96,6 +106,7 @@ describe('Nano JS', function(){
 
         $('#' + elementId).toggleClass(className);
 
-        expect(className).toContain(document.getElementById(elementId).className);
+        expect(className).toBe(document.getElementById(elementId).className);
     });
+
 });
