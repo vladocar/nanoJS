@@ -38,4 +38,15 @@ describe('Nano JS', function(){
         
         expect('').toBe(value);
     });
+
+    it("Removes an attribute", function(){
+        const attributeValue = 'on';
+        const attribute = 'class';
+        $('#' + elementId).attr(attribute, attributeValue);
+        expect(attributeValue).toBe($('#' + elementId).getAttr(attribute));
+
+        $('#' + elementId).removeAttr(attribute);
+       
+        expect('').toBe($('#' + elementId).getAttr(attribute));
+    });
 });
