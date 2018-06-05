@@ -4,7 +4,7 @@ describe('Nano JS', function(){
     beforeEach(function(){
         document.getElementById(elementId).removeAttribute("style")
     });
-    
+
     it('Applyies css style', function(){
         const style = 'background-color: rgb(34, 34, 34);';
 

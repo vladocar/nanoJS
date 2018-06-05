@@ -3,7 +3,7 @@ function Nano(selector){
     var values = Array.prototype.slice.call(document.querySelectorAll(selector));
 
     self.each = function(handler) {
-        [].forEach.call(values, handler);
+        values.forEach(handler);
         return this;
     };
 
