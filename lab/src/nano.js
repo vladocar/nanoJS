@@ -20,11 +20,11 @@ function Nano(selector){
     };
 
     self.getAttr = function (attribute) {
-        var firstElement = values[0];
+        let firstElement = values[0];
         if( !values || !firstElement){
             return '';
         }
-        var result = firstElement.getAttribute(attribute);
+        let result = firstElement.getAttribute(attribute);
         if(!result){
             return '';
         }
