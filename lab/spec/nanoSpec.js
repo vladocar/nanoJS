@@ -71,4 +71,13 @@ describe('Nano JS', function(){
 
         expect(eventThrown).toBeTruthy();
     });
+
+    it("Does not Set an event if the element does not exist", function(){
+        let eventThrown = false;
+        $("#" + 'invalid-elemet-id').on('click', function(){ eventThrown = true; });
+
+        document.getElementById(elementId).click();
+
+        expect(eventThrown).toBeFalsy();
+    });
 });
