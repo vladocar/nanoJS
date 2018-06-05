@@ -22,22 +22,22 @@ describe('Nano JS', function(){
 
     describe('when getting attribute is requested', function(){
         it('Returns string empty if there is no attribute', function(){
-            var value = $('#' + elementId).getAttr('invalid-attribute');
+            let value = $('#' + elementId).getAttr('invalid-attribute');
             
             expect('').toBe(value);
         });
 
         it('Returns string empty if there is no element', function(){
-            var value = $('#' + 'invalid-element-id').getAttr('invalid-attribute');
+            let value = $('#' + 'invalid-element-id').getAttr('invalid-attribute');
             
             expect('').toBe(value);
         });
 
         it('Returns the value of an attribute', function(){
-            var attributeValue = 'on';
+            let attributeValue = 'on';
             $('#' + elementId).attr('class', attributeValue);
     
-            var value = $('#' + elementId).getAttr('class');
+            let value = $('#' + elementId).getAttr('class');
             
             expect(value).toBe(attributeValue);
         });
