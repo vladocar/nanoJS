@@ -75,11 +75,19 @@ describe('Nano JS', function(){
 
         it('Sets an event', function(){
             let eventThrown = false;
-            $("#" + elementId).on('click', function(){ eventThrown = true; });
+            $('#' + elementId).on('click', function(){ eventThrown = true; });
     
             document.getElementById(elementId).click();
     
             expect(eventThrown).toBeTruthy();
         });
+    });
+
+    it('Adds a class name', function(){
+        const className = 'class-name';
+
+        $('#' + elementId).addClass(className);
+
+        expect(className).toContain(document.getElementById(elementId).className);
     });
 });
