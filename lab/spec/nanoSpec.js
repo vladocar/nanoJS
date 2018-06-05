@@ -63,21 +63,23 @@ describe('Nano JS', function(){
         expect(document.getElementById(elementId).style.cssText).toBe(style);
     });
 
-    it("Sets an event", function(){
-        let eventThrown = false;
-        $("#" + elementId).on('click', function(){ eventThrown = true; });
+    describe('When setting an event is requested', function(){
+        it("Does nothing if the element does not exist", function(){
+            let eventThrown = false;
+            $("#" + 'invalid-elemet-id').on('click', function(){ eventThrown = true; });
+    
+            document.getElementById(elementId).click();
+    
+            expect(eventThrown).toBeFalsy();
+        });
 
-        document.getElementById(elementId).click();
-
-        expect(eventThrown).toBeTruthy();
-    });
-
-    it("Does not Set an event if the element does not exist", function(){
-        let eventThrown = false;
-        $("#" + 'invalid-elemet-id').on('click', function(){ eventThrown = true; });
-
-        document.getElementById(elementId).click();
-
-        expect(eventThrown).toBeFalsy();
+        it("Sets an event", function(){
+            let eventThrown = false;
+            $("#" + elementId).on('click', function(){ eventThrown = true; });
+    
+            document.getElementById(elementId).click();
+    
+            expect(eventThrown).toBeTruthy();
+        });
     });
 });
