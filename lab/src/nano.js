@@ -86,31 +86,31 @@ function Nano(selector){
 
     self.insertBefore = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("beforeBegin", html);
+            element.insertAdjacentHTML('beforeBegin', html);
         });
     };
 
     self.insertAfter = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("afterEnd", html);
+            element.insertAdjacentHTML('afterEnd', html);
         });
     };
 
     self.insertFirst = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("afterBegin", html);
+            element.insertAdjacentHTML('afterBegin', html);
         });
     };
 
     self.insertLast = function (html) {
         return self.each(function (element) {
-            element.insertAdjacentHTML("beforeEnd", html);
+            element.insertAdjacentHTML('beforeEnd', html);
         });
     };
         
     self.empty = function () {
         return self.each(function (element) {
-            element.innerHTML = "";
+            element.innerHTML = '';
         });
     };
         
