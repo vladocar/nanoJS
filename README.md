@@ -57,6 +57,10 @@ yarn add @vladocar/nanojs
 
 ```html
 <script src="https://unpkg.com/@vladocar/nanojs@1.0.2/src/nanoJS.min.js"></script>
+
+OR
+
+<script src="https://cdn.jsdelivr.net/npm/@vladocar/nanojs/src/nanoJS.min.js"></script>
 ```
 
 ### Utils:
