@@ -90,4 +90,12 @@ describe('Nano JS', function(){
 
         expect(className).toContain(document.getElementById(elementId).className);
     });
+
+    it('Does not add a class name if the element does not exist', function(){
+        const className = 'class-name';
+
+        $('#' + 'invalid-element-id').addClass(className);
+
+        expect(className).not.toContain(document.getElementById(elementId).className);
+    });
 });
