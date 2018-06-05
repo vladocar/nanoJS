@@ -109,4 +109,12 @@ describe('Nano JS', function(){
         expect(className).toBe(document.getElementById(elementId).className);
     });
 
+    it('Sets html', function(){
+        var html = '<p></p>';
+
+        $('#' + elementId).html(html);
+
+        expect(document.getElementById(elementId).outerHTML).toContain(html);
+    });
+
 });
