@@ -20,6 +20,14 @@ describe('Nano JS', function(){
         expect(document.getElementById(elementId).outerHTML).toContain('class="on"');
     });
 
+    it('sets eq', function(){
+        const elementId = 'b';
+        const html = 'Hello World!';
+        $('#' + elementId).eq(0).html(html);
+
+        expect(document.getElementById(elementId).outerHTML).toContain(html);
+    });
+
     describe('when getting attribute is requested', function(){
         it('Returns string empty if there is no attribute', function(){
             let value = $('#' + elementId).getAttr('invalid-attribute');
@@ -125,7 +133,7 @@ describe('Nano JS', function(){
         expect(document.getElementById(elementId).outerText).toContain(text);
     });
 
-    it('Sets empty', function(){
+    it('Sets html empty', function(){
         var html = '<p></p>';
         $('#' + elementId).html(html);
         
