@@ -7,6 +7,11 @@ function Nano(selector){
         return this;
     };
 
+    self.eq = function(position) {
+        values = [values[position]];
+        return this;
+    };
+
     self.css = function (style) {
         return self.each(function (element) {
             element.style.cssText = element.style.cssText + style;
