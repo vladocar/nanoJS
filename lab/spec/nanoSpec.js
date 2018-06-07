@@ -125,7 +125,7 @@ describe('Nano JS', function(){
         expect(document.getElementById(elementId).outerText).toContain(text);
     });
 
-    it('Sets empty', function(){
+    it('Sets html empty', function(){
         var html = '<p></p>';
         $('#' + elementId).html(html);
         
