@@ -5,6 +5,7 @@ var nano = function(s) {
     if (typeof s === "object") {
         this.value = [s];
     }
+    this.length = this.value.length;
 };
 
  nano.prototype = {
