@@ -36,9 +36,9 @@ $('#c').empty();
 $("div").eq(0).html("Hello World!");
 ```
 
-#### getAtt
+#### getAttr
 ```js
-$("#b").getAtt("class");
+$("#b").getAttr("class");
 ```
 
 #### html
