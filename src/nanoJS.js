@@ -107,6 +107,10 @@
                 i.innerHTML = "";
             });
         },
+        parent: function () {
+            this.value = [this.value[0].parentNode];
+            return this;
+        },
         offset: function () {
             return this.each(function (i) {
                 offset = i.getBoundingClientRect();

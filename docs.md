@@ -64,6 +64,10 @@ $("#a").on("click", function(){
 
 })
 ```
+#### parent
+```js
+$("p").parent().css("background-color:green");
+```
 
 #### removeAttr
 ```js

@@ -77,6 +77,7 @@ html
 insertAfter, insertBefore, insertFirst insertLast  
 offset  
 on  
+parent  
 removeAttr  
 removeClass  
 text  
