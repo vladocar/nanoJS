@@ -48,10 +48,6 @@ npm i @vladocar/nanojs
 ```
 
 ```sh
-bower install nanoJS
-```
-
-```sh
 yarn add @vladocar/nanojs
 ```
 
