@@ -119,6 +119,11 @@
             this.value = [this.value[0].parentNode];
             return this;
         },
+        siblings: function () {
+            this.value = Array.prototype.filter.call(this.value[0].parentNode.children, (child) =>
+              child !== this.value[0]);
+            return this;
+        },
         offset: function () {
             return this.each(function (i) {
                 offset = i.getBoundingClientRect();
