@@ -1,4 +1,12 @@
-!(function () {
+!(function (factory) {
+    if (typeof exports === 'object' && typeof module !== 'undefined') {
+        module.exports = factory();
+    } else if (typeof define === 'function' && define.amd) {
+        define(factory);
+    } else {
+        window.$ = factory();
+    }
+})(function () {
     var nano = function (s) {
         if (typeof s === "string") {
             this.value = Array.prototype.slice.call(document.querySelectorAll(s));
@@ -118,7 +126,7 @@
         },
     };
 
-    window.$ = function (selector) {
+    return function (selector) {
         return new nano(selector);
     };
-})();
+});
