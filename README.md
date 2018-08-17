@@ -76,5 +76,6 @@ on
 parent  
 removeAttr  
 removeClass  
+siblings  
 text  
 toggleClass  

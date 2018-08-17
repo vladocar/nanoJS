@@ -78,6 +78,12 @@ $('#c').removeAttr("class");
 ```js
 $('#c').removeClass("someClass");
 ```
+#### siblings
+```js
+$("#active").siblings().css("background-color:green");
+
+$("li").eq(2).siblings().css("background-color:red");
+```
 
 #### text
 ```js
