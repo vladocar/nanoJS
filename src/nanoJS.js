@@ -129,6 +129,9 @@
                 offset = i.getBoundingClientRect();
             });
         },
+        log: function () {
+            console.log(this);
+        },
     };
 
     return function (selector) {
