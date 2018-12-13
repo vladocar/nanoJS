@@ -1,7 +1,7 @@
 # nanoJS
 
 [![License MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
-[![Gzip Size](https://img.badgesize.io/https://unpkg.com/@vladocar/nanojs@1.0.3/src/nanoJS.min.js?compression=gzip)](https://unpkg.com/@vladocar/nanojs@1.0.3/src/nanoJS.min.js)
+[![Gzip Size](https://img.badgesize.io/https://unpkg.com/@vladocar/nanojs@1.0.4/src/nanoJS.min.js?compression=gzip)](https://unpkg.com/@vladocar/nanojs@1.0.4/src/nanoJS.min.js)
 [![npm](https://img.shields.io/npm/v/@vladocar/nanojs.svg)](https://www.npmjs.com/package/@vladocar/nanojs)
 
 
@@ -9,7 +9,7 @@ Minimal standalone JS library for DOM manipulation
 
 <a href="https://vladocar.github.io/nanoJS/"><img src="logos/png/horizontal%20-%20logo/nano-logo.png"/></a>
 
-nanoJS is around 100 lines of code (0.6 Kb compressed) JavaScript library for basic DOM manipulation. It has jQuery like syntax and supports chaining.
+nanoJS is around 100 lines of code (0.8 Kb compressed) JavaScript library for basic DOM manipulation. It has jQuery like syntax and supports chaining.
 
 Syntax demos:
 
@@ -52,7 +52,7 @@ yarn add @vladocar/nanojs
 ```
 
 ```html
-<script src="https://unpkg.com/@vladocar/nanojs@1.0.3/src/nanoJS.min.js"></script>
+<script src="https://unpkg.com/@vladocar/nanojs@1.0.8/src/nanoJS.min.js"></script>
 
 OR
 
