@@ -79,3 +79,4 @@ removeClass
 siblings  
 text  
 toggleClass  
+log
