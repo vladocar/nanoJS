@@ -61,33 +61,57 @@
             });
         },
         addClass: function (v) {
+            var a = v.split(' ');
             return this.each(function (i) {
-                if (i.classList) {
-                    i.classList.add(v)
-                }
-                else {
-                    i.className += ' ' + v;
+                for (var x = 0; x < a.length; x++) {
+                    if (i.classList) {
+                      i.classList.add(a[i]); 
+                    }
+                    else {
+                      i.className += ' ' + a[i];
+                    }
                 }
             });
         },
         toggleClass: function (v) {
+            var a = v.split(' ');
             return this.each(function (i) {
-                i.classList.toggle(v);
+                for (var x = 0; x < a.length; x++) {
+                    if (i.classList) {
+                        i.classList.toggle(a[x]);
+                    }
+                    else {
+                        if (new RegExp('\\b'+ a[x] +'\\b').test(i.className)) {
+                            i.className = i.className.replace(new RegExp('\\b'+ a[x] +'\\b', 'g'), '');
+                        } else {
+                            i.className += ' ' + a[x];
+                        }
+                    }
+                }
             });
         },
         removeClass: function (v) {
+            var a = v.split(' ');
             return this.each(function (i) {
-                i.classList.remove(v);
+                for (var x = 0; x < a.length; x++) {
+                    if (i.classList) {
+                        i.classList.remove(a[x]);
+                    }
+                    else {
+                        i.className = i.className.replace(new RegExp('\\b'+ a[x] +'\\b', 'g'), '');
+                    }
+                }
             });
         },
         html: function (v) {
-            return this.each(function (i) {
-                i.innerHTML = v;
+            return (typeof v == 'undefined') ? this.value[0].innerHTML : this.each(function(i) {
+                i.innerHTML = value;
             });
         },
         text: function (v) {
-            return this.each(function (i) {
-                i.innerText = v;
+            return (typeof v == 'undefined') ? this.value[0].innerText || this.value[0].textContent : this.each(function(i) {
+                i.innerText = value;
+                i.textContent = value;
             });
         },
         insertBefore: function (v) {
