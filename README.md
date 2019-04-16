@@ -52,7 +52,7 @@ yarn add @vladocar/nanojs
 ```
 
 ```html
-<script src="https://unpkg.com/@vladocar/nanojs@1.0.4/src/nanoJS.min.js"></script>
+<script src="https://unpkg.com/@vladocar/nanojs@1.0.8/src/nanoJS.min.js"></script>
 
 OR
 

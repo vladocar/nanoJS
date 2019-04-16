@@ -8,36 +8,12 @@
     }
 })(function () {
     var nano = function (s) {
-        if (!s) return;
-        
-        if (typeof s === 'function') {
-          if (document.readyState === 'complete' || (!document.attachEvent && document.readyState === 'interactive')) {
-            setTimeout(s, 1);
-          } else {
-            if (window.addEventListener) {
-              document.addEventListener('DOMContentLoaded', s, false);
-            } else {
-              document.attachEvent('onreadystatechange', function() {
-                if (document.readyState !== 'loading') {
-                  document.onreadystatechange = null;
-                  s();
-                }
-              });
-            }
-          }
-        } else if (typeof s === 'string') {
-          try {
-            this.nodes = Array.prototype.slice.call(document.querySelectorAll(s));
-          } catch(e) {
-            this.nodes = document.querySelectorAll(s);
-          }
-        } else if (s.nodeType || s === window) {
-          this.nodes = [s];
-        } else {
-          this.nodes = s;
+        if (typeof s === "string") {
+            this.value = Array.prototype.slice.call(document.querySelectorAll(s));
         }
-
-        if (!this.nodes) return;
+        if (typeof s === "object") {
+            this.value = [s];
+        }
     };
 
     nano.prototype = {
