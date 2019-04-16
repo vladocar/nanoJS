@@ -65,7 +65,7 @@
             return this.each(function (i) {
                 for (var x = 0; x < a.length; x++) {
                     if (i.classList) {
-                      i.classList.add(a[i]); 
+                      i.classList.add(a[i]);
                     }
                     else {
                       i.className += ' ' + a[i];
@@ -140,8 +140,7 @@
             });
         },
         parent: function () {
-            this.value = [this.value[0].parentNode];
-            return this;
+            return $(this.value[0].parentNode);
         },
         siblings: function () {
             this.value = Array.prototype.filter.call(this.value[0].parentNode.children, (child) =>
