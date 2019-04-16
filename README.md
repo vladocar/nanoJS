@@ -9,7 +9,7 @@ Minimal standalone JS library for DOM manipulation
 
 <a href="https://vladocar.github.io/nanoJS/"><img src="logos/png/horizontal%20-%20logo/nano-logo.png"/></a>
 
-nanoJS is around 100 lines of code (0.8 Kb compressed) JavaScript library for basic DOM manipulation. It has jQuery like syntax and supports chaining.
+nanoJS is around 100 lines of code (0.9 Kb compressed) JavaScript library for basic DOM manipulation. It has jQuery like syntax and supports chaining.
 
 Syntax demos:
 
