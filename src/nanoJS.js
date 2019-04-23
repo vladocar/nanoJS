@@ -105,13 +105,13 @@
         },
         html: function (v) {
             return (typeof v == 'undefined') ? this.value[0].innerHTML : this.each(function(i) {
-                i.innerHTML = value;
+                i.innerHTML = v;
             });
         },
         text: function (v) {
             return (typeof v == 'undefined') ? this.value[0].innerText || this.value[0].textContent : this.each(function(i) {
-                i.innerText = value;
-                i.textContent = value;
+                i.innerText = v;
+                i.textContent = v;
             });
         },
         insertBefore: function (v) {
