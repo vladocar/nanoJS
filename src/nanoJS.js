@@ -65,10 +65,10 @@
             return this.each(function (i) {
                 for (var x = 0; x < a.length; x++) {
                     if (i.classList) {
-                      i.classList.add(a[i]);
+                      i.classList.add(a[x]);
                     }
                     else {
-                      i.className += ' ' + a[i];
+                      i.className += ' ' + a[x];
                     }
                 }
             });
